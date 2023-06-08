@@ -1,3 +1,6 @@
+//Java script aceita quebra de linha, desconsidera espaços e é case sensitive 
+//Pode ser usado $ ou _ para nomear, e nunca usar algum nome de comandos do javascrit
+
 /* Tipos de saida 
 alert("Sou uma alerta!")
 console.log("Hello Word - Fernando Gates");
@@ -5,18 +8,34 @@ document.getElementById("texto").innerHTML="Meu primeiro texto em <b>JS</b>";
 document.write('Oi escrito com <b>document.write</b>');
 */ 
 
-/* Java script aceita quebra de linha e desconsidera espaços */
 
-function soma(){
-
-let a,b,c;
-a=5;
-b=6;
-c=7;
-
-var result = a + b + c;
-}
+/*Tipo de Variaveis - No Javascript temos 3 tipos de variaveis que ode ser declaradas
+var v = "Fernando"; //Varia Globalmente
+let l = 10; //Varia apenas dentro do seu bloco
+const c = 100; //Nunca varia
+alert(c); //imprime a variavel c
+*/
 
 
+/* Tipos Operadores
+ 1) Operadores Aritméticos (+ - * / )
+ 2) Operadores de Atribuição
+ 3) Operadores de sequencia
+ 4) Operadores de Comparação
+ 5_ Operadores Condicional (Ternário)
+ 6) Oeradores Lógicos  
 
-console.log(result);
+ // +=soma, -=subtração, *=multilicação, /=divisão, 
+ // == é igual, === valor e tipo iguais, != não é igual, !== ´valor e tipo não é igual
+ // ++ incremente, --decrementa
+ 
+//exemplo simples
+var idade, eleitor;
+idade=71;
+eleitor= (idade<18) ? "Não, Eleitor":"Sim, Eleitor"; // Condicional(Ternário)
+
+resultado = !(idade === 65 || idade === 72); //true //false &&=E ||=OU !=NÃO
+
+console.log(resultado); //imprime no console a variavel resultado
+
+*/
