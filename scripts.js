@@ -40,7 +40,8 @@ console.log(resultado); //imprime no console a variavel resultado
 
 */
 
-//Funções - Uma função é um bloco de codigo rojetado para executar uma tarefa especifica
+/*
+//Funções - Uma função é um bloco de codigo projetado para executar uma tarefa especifica
 
 //Função SOMA
 function soma(valor1, valor2){
@@ -51,9 +52,51 @@ function soma(valor1, valor2){
 function realparaDolar(real, cotacaoDolar){
     return real * cotacaoDolar;
 }
-
 real = 10;
 cotacaoDolar = 5;
 
 var total = realparaDolar(real, cotacaoDolar);
 document.write("O valor em real é R$: "+real+"<br> O valor em dólar é U$: "+total);
+
+//Função conversão Celsius / Fahrenheit
+function paraCelsius(valorFahrenheit){
+    return (5 / 9) * (valorFahrenheit - 32);
+}
+var x = paraCelsius(77);
+alert("A temperatura é de " + x + " graus Celsius");
+
+//Função alerta
+function alertaHello(){
+   document.getElementById("texto").innerHTML = "Ola eu sou Fernando Afonso!";
+}
+*/
+
+/*
+
+// OBJETOS  são basicamente variaveis com muitos valores dentro.
+// Ex: const carro = {marca:"ford, modelo: "Ka", ano: 2015}
+
+const carro = {
+    marca:"ford",
+    modelo: "Ka",
+    ano:2015,
+    placa:"ABC-1234",
+    buzina: function() {alert('Biiiiiiiiiiiiiiiiiii')},
+    completo: function() {
+        return "A marca é "+this.marca+" e o modelo é: "+this.modelo;
+    }
+
+};
+
+const pessoa = {
+    nome:"Fernando",
+    idade:36,
+    resultado: function() {
+
+        return "Meu nome é "+this.nome+" Tenho "+this.idade; 
+    }
+};
+
+console.log(pessoa.resultado());
+*/
+
