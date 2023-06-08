@@ -39,3 +39,21 @@ resultado = !(idade === 65 || idade === 72); //true //false &&=E ||=OU !=NÃO
 console.log(resultado); //imprime no console a variavel resultado
 
 */
+
+//Funções - Uma função é um bloco de codigo rojetado para executar uma tarefa especifica
+
+//Função SOMA
+function soma(valor1, valor2){
+    return valor1 + valor2;
+}
+
+//Função de Cotação do DOLAR
+function realparaDolar(real, cotacaoDolar){
+    return real * cotacaoDolar;
+}
+
+real = 10;
+cotacaoDolar = 5;
+
+var total = realparaDolar(real, cotacaoDolar);
+document.write("O valor em real é R$: "+real+"<br> O valor em dólar é U$: "+total);
